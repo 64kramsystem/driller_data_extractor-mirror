@@ -1,0 +1,43 @@
+How to build drildump:
+======================
+
+  Under Unix: type 'make'. 
+  Under DOS:  DRILDUMP.EXE was compiled with Pacific C; the command used 
+  was PACC -Lf -Bl -D__MSDOS__ DRILDUMP.C
+
+  Other platforms: Up to you.
+
+How to use drildump:
+====================
+
+  If drildump is run with no arguments, it will try to list out the objects
+in the file "driller.sna" in the current directory.
+  If "driller.sna" is somewhere else, you can pass its path to drildump 
+thus: "drildump /path/to/driller.sna".
+
+  Standard drildump output is an ASCII dump. However, it can also be used
+to produce output in POV-Ray format. Due to my inexperience with POV-Ray the
+pictures aren't anything special, but there you go.
+  To select POV output, use the option "-pov". This will produce a POV file
+of the first room (Amethyst). To produce a POV model of another room, add
+a "-room" option, eg "drildump -pov -room 5".
+
+  If you're running under Unix and have POV-Ray installed, you can type
+"make pictures" to produce pictures of all the locations in the game, in 
+PNG format.
+
+  Note that POV output displays *all* objects, whether visible or not. This
+means that (for example) in Obsidian, the slab that's used as a bridge 
+appears in both its "up" and "down" positions.
+
+Dark Side / Total Eclipse
+=========================
+
+DRILDUMP includes basic support for these Freescape games. The database 
+format is almost identical (in Dark Side, the gas rig coordinates are
+used to extend the room name; in Total Eclipse, the room name is shortened
+to 4 characters).
+
+To dump Dark Side or Total Eclipse, add "-dark" or "-eclipse" to the end
+of the command line. "make pictures" will also generate pictures from 
+Dark Side, but not Total Eclipse.

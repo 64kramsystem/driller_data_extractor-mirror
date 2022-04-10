@@ -1,0 +1,10 @@
+camera
+{
+   location  <28, 10, 38>
+   direction <0, -0.1,  1>
+   look_at   <71, 11, 40>
+}
+
+light_source {< 40, 16,  40> color 1.0}
+
+
