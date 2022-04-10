@@ -2,13 +2,17 @@
 
 Mirror of the Driller (and some other Freescape games) extractor.
 
+The repository contains an extract of the originally provided archive (`drildump.zip`). The original README is [this](README).
+
 The original website (https://www.seasip.demon.co.uk/ZX/Driller) is now offline; the last version can still be browsed via [Wayback Machine](https://web.archive.org/web/20200116141513/https://www.seasip.demon.co.uk/ZX/Driller).
+
+## Useful information
 
 The project compiles on recent compilers (e.g. GCC 9.4).
 
-The repository contains an extract of the originally provided archive (`drildump.zip`).
-
 A copy of `driller.sna` can be downloaded from [here](https://k1.spdns.de/Vintage/Sinclair/Software/ZX%20Spectrum%20Software/Games/D/Driller%20(Incentive)/driller.sna).
+
+The POV-Ray functionality appears not to work (fully) correctly; all (few) rooms I've tested rendered to blank or so images.
 
 ## Original website text
 
