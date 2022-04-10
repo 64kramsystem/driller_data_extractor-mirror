@@ -33,7 +33,7 @@ CFLAGS = -g -Wall
 all:	drildump 
 
 %.png:	%.pov
-	x-povray $(POVRAYFLAGS) -I$<
+	povray $(POVRAYFLAGS) -I$<
 
 pictures:	$(PICTURES)
 
