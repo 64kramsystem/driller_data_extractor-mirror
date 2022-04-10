@@ -1,3 +1,13 @@
-/driller.sna
+# Data files
+#
+/*.sna
+
+# Compiled executables
+#
 /drildump
 /drildump.exe
+
+# Rendered files
+#
+/*.pov
+/*.png

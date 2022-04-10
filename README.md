@@ -8,11 +8,14 @@ The original website (https://www.seasip.demon.co.uk/ZX/Driller) is now offline;
 
 ## Useful information
 
-The project compiles on recent compilers (e.g. GCC 9.4).
+The project compiles on recent compilers (e.g. GCC 9.4); in order to export png files on Ubuntu, the packages `povray` and `povray-includes` are required.
 
-A copy of `driller.sna` can be downloaded from [here](https://k1.spdns.de/Vintage/Sinclair/Software/ZX%20Spectrum%20Software/Games/D/Driller%20(Incentive)/driller.sna).
+The SNA (data files) can be found:
 
-The POV-Ray functionality appears not to work (fully) correctly; all (few) rooms I've tested rendered to blank or so images.
+- `driller.sna`: [here](https://k1.spdns.de/Vintage/Sinclair/Software/ZX%20Spectrum%20Software/Games/D/Driller%20(Incentive)/driller.sna)
+- `darkside.sna`:[here](https://k1.spdns.de/Vintage/Sinclair/Software/ZX%20Spectrum%20Software/Games/D/Dark%20Side%20(Incentive)/darkside.sna)
+
+In order to generate POV and PNG files, run `make -j $(nproc) pictures` (`-j ...` is for speed); the Makefile expects a `x-povray` binary, which on Ubuntu is named `povray`, so I've patched it to use the latter.
 
 ## Original website text
 
